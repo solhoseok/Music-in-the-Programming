@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/musica.png" type="image/x-icon">
+    <title>Music in the programming</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        html {
+            background: url(imagenes/IMAGEN\ 1.jpg) no-repeat center fixed;
+            background-size: cover;
+        }
+    </style>
+
+<body>
+    <header>
+        <button class="btn-hamburguer" id="abrir">Menu</button>
+        <img class="logo" src="./imagenes/pngtree-music-logo-png-image_8736577.png" alt="Logo">
+        <nav class="visible" id="nav">
+
+            <ul>
+                <button class="cerrar-menu" id="cerrar">Cerrar</button>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="indexbts.html" target="_blank">BTS</a></li>
+                <li><a href="indexleto.html" target="_blank">Jared leto</a></li>
+                <li><a href="indexbonjovi.html" target="_blank">Bon Jovi</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="card.html" target="_blank"><b>Nosotros</b></a></li>
+            </ul>
+        </nav>
+        <button class="btn-registro" onclick="abrirForm()">Login</button>
+        <div class="form-container" id="myForm">
+            <form class="form">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Ingrese Email" name="email" required>
+
+                <label for="psw"><b>Contraseña</b></label>
+                <input type="password" placeholder="Ingrese contraseña" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="cerrarForm()">Cerrar</button>
+            </form>
+        </div>
+
+
+    </header>
+
+
+    <!--Video de youtube-->
+    <div class="container">
+        <video src="videos/RAP de PROGRAMACIÓN.mp4" class="slider" autoplay loop controls></video>
+        <ul>
+            <li onclick="videoslider('videos/RAP de PROGRAMACIÓN.mp4')"><video src="videos/RAP de PROGRAMACIÓN.mp4"></video></li>
+
+            <li onclick="videoslider('videos/bon jovi proyecto.mp4')"><video src="videos/bon jovi proyecto.mp4"></video></li>
+            <li onclick="videoslider('videos/BTS proyecto.mp4')"><video src="videos/BTS proyecto.mp4"></video></li>
+            <li onclick="videoslider('videos/STUCK  - Jared Leto.mp4')"><video
+                    src="videos/STUCK  - Jared Leto.mp4"></video></li>
+        </ul>
+    </div>
+
+    <script>
+
+        function videoslider(links) {
+            document.querySelector(".slider").src = links;
+        }
+    </script>
+
+
+
+
+    <!--CARDS-->
+    <h1 style="color:#800aee">Nuestros artistas</h1>
+
+    <div class="tar-contenedor">
+        <div class="card">
+            <div class="face front">
+                <img src="imagenes/bts 3.png" alt="">
+                <h3>BTS</h3>
+            </div>
+            <div class="face back">
+                <h3>BTS</h3>
+                <P>BTS (en hangul, 방탄소년단; romanización revisada del coreano, Bangtan Sonyeondan; literalmente,
+                    «Bulletproof Boy Scouts»), también conocido como Bangtan Boys, es un grupo surcoreano formado en
+                    2010. Está compuesto por siete integrantes: Jin, Suga, J-Hope, RM, Jimin, V y Jungkook.</P>
+                <div class="link">
+                    <a href="indexbts.html" target="_blank">Detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="imagenes/Jared Leto.jpg" alt="">
+                <h3>Jared Leto </h3>
+            </div>
+            <div class="face back">
+                <h3>Jared Leto </h3>
+                <P>Jared Joseph Leto, (Bossier City, Luisiana; 26 de diciembre de 1971), conocido como Jared Leto, es un
+                    actor, cantante, director y productor estadounidense. Es fundador de la banda de rock alternativo 30
+                    Seconds to Mars y ganador de los premios Óscar, Globo de oro, y del SAG.</P>
+                <div class="link">
+                    <a href="indexleto.html" target="_blank">Detalles</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="face front">
+                <img src="imagenes/bon jovi 2.webp" alt="">
+                <h3>Bon Jovi</h3>
+            </div>
+            <div class="face back">
+                <h3>Bon Jovi</h3>
+                <P>Bon Jovi es una banda estadounidense de rock formada en 1983 en Nueva Jersey por su líder y vocalista,
+                    Jon Bon Jovi. La formación actual la completan el teclista David Bryan, el batería Tico Torres, el
+                    bajista Hugh McDonald y el guitarrista Phil X. Este último sustituyó a Richie Sambora, quien abandonó la
+                    formación en 2013</P>
+                <div class="link">
+                    <a href="indexbonjovi.html" target="_blank">Detalles</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--SECCION DE CANIONES MAS ESCUCHADAS-->
+    <h1 style="color:#960be7">Canciones mas populares de Audius</h1>
+
+    <div class="contenedor-music" id="app">
+
+
+        <div style="margin-right: 2rem;" v-for="elemento in canciones.slice(0, 4)">
+            <div class="card">
+                <div class="face front">
+                    <img :src="elemento.artwork['480x480']" alt="">
+                    <h3>{{elemento.title}}</h3>
+                </div>
+                <div class="face back">
+                    <h3>{{}}</h3>
+                    <P style="overflow: auto;" >{{elemento.description}}</P>
+                    <div class="link">
+                        <a href="#">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <h1>{{elemento.genre}}</h1>
+
+
+
+        </div>
+
+    </div>
+
+    <script>
+        console.log(window);
+        alert("Bienvenido a esta Epifania musical en la programacion <3")
+    </script>
+
+
+
+
+    <footer>
+        <p> <b> Derechos de autor © 2023 - Music in the Programming </b> </p>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

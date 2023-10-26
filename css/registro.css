@@ -1,0 +1,165 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    
+  
+    
+}
+
+/* Estilos para el encabezado */
+.header1 {
+    background-color: rgb(238, 153, 167); /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    padding: 20px 0;
+    font-family: sans-serif;
+    
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 89px; /* Ajusta el ancho del logo según tus necesidades */
+    height: 50px;
+}
+
+/* Estilos para la barra de navegación */
+
+.logo{
+    height: 70px;
+    width: 70px;
+    margin-left: 3%;
+}
+
+nav {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+nav ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: 0; 
+     
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-registro{
+    
+    background-color: red;   
+    width: 150px;
+    height: 50px;    
+    margin-left:auto;
+    margin-right: 3%;
+    cursor:pointer;
+    border-radius: 10px;  
+     
+}
+
+/*menu hamburguesa*/
+
+.btn-hamburguer,
+.cerrar-menu{
+    display: none;
+
+}
+@media screen and (max-width: 700px) {
+    .btn-hamburguer,
+    .cerrar-menu
+    {
+        display: flex ;
+        height: 50px;
+        width: 70px;
+        cursor: pointer;
+        
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+        
+        
+        
+        
+    }
+
+    nav{
+        
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1 rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right:60%;
+        background-color: black;
+        
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        height: 100%;
+        
+
+    }
+    nav.visible {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        
+        
+        
+        
+    }
+
+    ul{
+        flex-direction: column;
+        margin-bottom: auto;
+    
+        
+        
+        
+    }
+}
+
+
+/*estilos para el formulario*/
+
+.formulario{
+    padding: 2rem;
+
+    
+    background-image:url('../imagenes/IMAGEN\ 1.jpg');
+    
+    
+}
+
+/*Estilos para el footer*/
+
+footer {
+    background-color: #333; /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    
+
+}

@@ -1,0 +1,157 @@
+html, body {
+    margin: 0 20px;
+    padding: 0;
+    background-color: #180725;
+
+    
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #6f10b8a1;
+    color: #fff; 
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+h1,p{
+    background-color: #1807258f;
+    color: #fff; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+/* Estilos para el logo */
+.logo img {
+    width: 80px;
+    height: 50px;
+}
+/* Estilos para la barra de navegacion */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*Continue aca*/
+.album{
+    text-align: center; /* Alinea las tarjetas al centro del contenedor */
+    margin: 20px; /* Agrega márgenes alrededor del contenedor */
+    padding: 10px; /* Agrega relleno al contenedor */
+    background-color: #5014816e; /* Cambia el color de fondo del contenedor */
+    border: 1px solid #2b1979; /* Agrega un borde al contenedor */
+}
+.album1 {
+    border: 1px solid #2b1979;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+.album2 {
+    border: 1px solid #2b1979;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+.album3 {
+    border: 1px solid #2b1979;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+.album4 {
+    border: 1px solid #2b1979;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+.album5 {
+    border: 1px solid #2b1979;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+.album6 {
+    border: 1px solid #2b1979;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+.album7 {
+    border: 1px solid #2b1979;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+
+.leto img{
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin-left: 550px;
+}
+a{
+    height: 30px;
+    width: 30px;
+    text-decoration:solid;
+    color: rgb(65, 14, 248);
+    font-size:larger;
+}
+
+
+
+
+/*Estilos para el footer*/
+
+footer {
+    background-color: #780acc27; /* Cambia el color de fondo  */
+    color: #fff; /* Cambia el color del texto */
+    padding: 20px 0;
+    text-align: center;
+    
+    margin-top: 5px;
+}
+
+footer .tw img  {
+    height: 40px;
+    padding: 10px;
+    width: 40px;
+    margin-right: 900px;
+
+    
+}
+footer .ig img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 300px;
+    margin-right: 350px;
+
+}
+
+
